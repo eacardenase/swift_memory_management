@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		A51C63A32DCC1A1C0001AE5E /* CyclicalAssets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CyclicalAssets; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51C63AD2DCC1A300001AE5E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +45,7 @@
 		A51C639A2DCC1A1C0001AE5E = {
 			isa = PBXGroup;
 			children = (
+				A51C63AD2DCC1A300001AE5E /* README.md */,
 				A51C63A52DCC1A1C0001AE5E /* CyclicalAssets */,
 				A51C63A42DCC1A1C0001AE5E /* Products */,
 			);
