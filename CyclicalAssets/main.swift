@@ -16,6 +16,9 @@ class Simulation {
         let gem = Asset(name: "Big Diamond", value: 5_000.0)
         let poem = Asset(name: "Magnum Opus", value: 0.0)
         
+        vault13.store(coin)
+        vault13.store(gem)
+        
         print("Created some assets: \([coin, gem, poem])")
     }
 }
