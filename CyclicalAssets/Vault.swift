@@ -12,6 +12,10 @@ class Vault {
     
     private(set) var assets = [Asset]()
     
+    var totalValue: Double {
+        return assets.reduce(0) { $0 + $1.value }
+    }
+    
     init(number: Int) {
         self.number = number
     }
@@ -22,6 +26,11 @@ class Vault {
     
     func store(_ asset: Asset) {
         asset.container = self
+        
+        asset.changeHandler = { (change) in
+            print("An asset has changed value by \(change). New total value: \(self.totalValue)")
+        }
+        
         assets.append(asset)
     }
 }
