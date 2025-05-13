@@ -27,8 +27,8 @@ class Vault {
     func store(_ asset: Asset) {
         asset.container = self
         
-        asset.changeHandler = { [unowned self] (change) in
-            print("An asset has changed value by \(change). New total value: \(totalValue)")
+        asset.changeHandler = { [unowned self, unowned asset] (change) in
+            print("\(asset) has changed value by \(change). New total value: \(totalValue)")
         }
         
         assets.append(asset)
